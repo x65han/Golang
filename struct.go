@@ -13,6 +13,10 @@ func main() {
 	c.y = 2
 	c.r = 3
 	fmt.Println(circleArea(c))
+	fmt.Println(c.area())
+}
+func (c Circle) area() float64{
+	return round(math.Pi * c.r * c.r)
 }
 func circleArea(c Circle) float64{
 	return round(math.Pi * c.r * c.r)
